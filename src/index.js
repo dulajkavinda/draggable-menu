@@ -48,9 +48,10 @@ export const ExampleComponent = ({ text }) => {
             style={{ color: 'white', width: '60px', height: '60px' }}
           />
         </motion.div>
+
         <motion.div
           variants={containerVariants}
-          animate='active'
+          animate={pressed ? 'active' : 'initial'}
           initial='inactive'
           className={styles.dropdown}
         >
